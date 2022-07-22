@@ -1,0 +1,6 @@
+{
+    "cucumber-quick": {
+        "tool": "cypress",
+        "script": "npx cypress-tags"
+    }
+}

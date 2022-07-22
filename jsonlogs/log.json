@@ -1,0 +1,634 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 3,
+        "name": "search page opened",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 4,
+            "name": "search page is opened",
+            "result": {
+              "duration": 892000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "rent-car-flow;success-search",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "success search",
+        "steps": [
+          {
+            "keyword": "When ",
+            "line": 7,
+            "name": "user enter search info",
+            "result": {
+              "duration": 586000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "country",
+                  "France"
+                ]
+              },
+              {
+                "cells": [
+                  "city",
+                  "Paris"
+                ]
+              },
+              {
+                "cells": [
+                  "model",
+                  ""
+                ]
+              },
+              {
+                "cells": [
+                  "pickup",
+                  "tomorrow"
+                ]
+              },
+              {
+                "cells": [
+                  "dropoff",
+                  "the day after tomorrow"
+                ]
+              }
+            ]
+          },
+          {
+            "keyword": "And ",
+            "line": 13,
+            "name": "user click on the search button",
+            "result": {
+              "duration": 236000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 14,
+            "name": "user click on the rent button on one of search result",
+            "result": {
+              "duration": 5288000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 15,
+            "name": "rent detail page is loaded",
+            "result": {
+              "duration": 46000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 16,
+            "name": "user can confirm details are correct on rent details",
+            "result": {
+              "duration": 345000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 17,
+            "name": "user click rent button",
+            "result": {
+              "duration": 520000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 18,
+            "name": "user lands on summary page",
+            "result": {
+              "duration": 32000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 19,
+            "name": "user can confirm details are correct on summary page",
+            "result": {
+              "duration": 365000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 20,
+            "name": "user enter personal detail",
+            "result": {
+              "duration": 1625000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstName",
+                  "testname"
+                ]
+              },
+              {
+                "cells": [
+                  "lastName",
+                  "testlastname"
+                ]
+              },
+              {
+                "cells": [
+                  "cardNumber",
+                  "41111111111"
+                ]
+              },
+              {
+                "cells": [
+                  "email",
+                  "test@abc.com"
+                ]
+              }
+            ]
+          },
+          {
+            "keyword": "And ",
+            "line": 25,
+            "name": "user click rent button",
+            "result": {
+              "duration": 369000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 3,
+        "name": "search page opened",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 4,
+            "name": "search page is opened",
+            "result": {
+              "duration": 182000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "rent-car-flow;negative-test-cases-on-search-form:-missing-dates,-invalid-location-(commented-out-as-it-will-fail),-invalid-model(commented-out),-expired-date(commented-out),-invalid-date-order;;2",
+        "keyword": "Scenario",
+        "line": 34,
+        "name": "negative test cases on search form: missing dates, invalid location (commented out as it will fail), invalid model(commented out), expired date(commented out), invalid date order",
+        "steps": [
+          {
+            "keyword": "When ",
+            "line": 29,
+            "name": "user enter invalid search info \"France\", \"Paris\", \"\", \"tomorrow\", \"\"",
+            "result": {
+              "duration": 306000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 30,
+            "name": "user click on the search button",
+            "result": {
+              "duration": 216000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 31,
+            "name": "user should not be able to see any search result and see \"Please fill pickup and drop off dates\"",
+            "result": {
+              "duration": 27000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 3,
+        "name": "search page opened",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 4,
+            "name": "search page is opened",
+            "result": {
+              "duration": 185000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "rent-car-flow;negative-test-cases-on-search-form:-missing-dates,-invalid-location-(commented-out-as-it-will-fail),-invalid-model(commented-out),-expired-date(commented-out),-invalid-date-order;;3",
+        "keyword": "Scenario",
+        "line": 35,
+        "name": "negative test cases on search form: missing dates, invalid location (commented out as it will fail), invalid model(commented out), expired date(commented out), invalid date order",
+        "steps": [
+          {
+            "keyword": "When ",
+            "line": 29,
+            "name": "user enter invalid search info \"France\", \"Paris\", \"\", \"\", \"the day after tomorrow\"",
+            "result": {
+              "duration": 611000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 30,
+            "name": "user click on the search button",
+            "result": {
+              "duration": 208000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 31,
+            "name": "user should not be able to see any search result and see \"Please fill pickup and drop off dates\"",
+            "result": {
+              "duration": 22000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 3,
+        "name": "search page opened",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 4,
+            "name": "search page is opened",
+            "result": {
+              "duration": 182000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "rent-car-flow;negative-test-cases-on-search-form:-missing-dates,-invalid-location-(commented-out-as-it-will-fail),-invalid-model(commented-out),-expired-date(commented-out),-invalid-date-order;;4",
+        "keyword": "Scenario",
+        "line": 39,
+        "name": "negative test cases on search form: missing dates, invalid location (commented out as it will fail), invalid model(commented out), expired date(commented out), invalid date order",
+        "steps": [
+          {
+            "keyword": "When ",
+            "line": 29,
+            "name": "user enter invalid search info \"France\", \"Paris\", \"\", \"the day after tomorrow\", \"tomorrow\"",
+            "result": {
+              "duration": 595000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 30,
+            "name": "user click on the search button",
+            "result": {
+              "duration": 201000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 31,
+            "name": "user should not be able to see any search result and see \"Please enter a valid date!\"",
+            "result": {
+              "duration": 17000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 3,
+        "name": "search page opened",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 4,
+            "name": "search page is opened",
+            "result": {
+              "duration": 189000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "rent-car-flow;invalid-summary-form-data:-missing-field,-exceed-length-requirement(commented-out-as-tests-will-fail),-invalid-format",
+        "keyword": "Scenario",
+        "line": 41,
+        "name": "invalid summary form data: missing field, exceed length requirement(commented out as tests will fail), invalid format",
+        "steps": [
+          {
+            "keyword": "When ",
+            "line": 42,
+            "name": "user enter search info",
+            "result": {
+              "duration": 650000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "country",
+                  "France"
+                ]
+              },
+              {
+                "cells": [
+                  "city",
+                  "Paris"
+                ]
+              },
+              {
+                "cells": [
+                  "model",
+                  ""
+                ]
+              },
+              {
+                "cells": [
+                  "pickup",
+                  "tomorrow"
+                ]
+              },
+              {
+                "cells": [
+                  "dropoff",
+                  "the day after tomorrow"
+                ]
+              }
+            ]
+          },
+          {
+            "keyword": "And ",
+            "line": 48,
+            "name": "user click on the search button",
+            "result": {
+              "duration": 197000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 49,
+            "name": "user click on the rent button on one of search result",
+            "result": {
+              "duration": 5302000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 50,
+            "name": "rent detail page is loaded",
+            "result": {
+              "duration": 49000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 51,
+            "name": "user click rent button",
+            "result": {
+              "duration": 314000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 52,
+            "name": "user lands on summary page",
+            "result": {
+              "duration": 45000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 53,
+            "name": "user enter invalid personal detail and error showed when submit",
+            "result": {
+              "duration": 10326000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstName",
+                  "lastName",
+                  "cardNumber",
+                  "email",
+                  "expectedError"
+                ]
+              },
+              {
+                "cells": [
+                  "validname",
+                  "validlastname",
+                  "1",
+                  "",
+                  "Email is required"
+                ]
+              },
+              {
+                "cells": [
+                  "validname",
+                  "validlastname",
+                  "",
+                  "valid@abc.com",
+                  "Card number is required"
+                ]
+              },
+              {
+                "cells": [
+                  "validname",
+                  "",
+                  "1",
+                  "valid@abc.com",
+                  "Last name is required"
+                ]
+              },
+              {
+                "cells": [
+                  "",
+                  "validlastname",
+                  "1",
+                  "valid@abc.com",
+                  "Name is required"
+                ]
+              },
+              {
+                "cells": [
+                  "validname",
+                  "validlastname",
+                  "dsfds",
+                  "valid@abc.com",
+                  "Card number contains wrong chars"
+                ]
+              },
+              {
+                "cells": [
+                  "validname",
+                  "validlastname",
+                  "4111",
+                  "invalid.com",
+                  "Please provide valid email"
+                ]
+              }
+            ]
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "rent-car-flow",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Rent car flow",
+    "uri": "cypress/e2e/features/test.feature"
+  }
+]
